@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Build Your Portfolio</h1>
+            <p>Add your professional details and showcase your work</p>
+        </header>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Input Section -->
+            <section class="input-section">
+                <div class="form-container">
+                    <h2>Add Portfolio Item</h2>
+                    
+                    <form id="portfolioForm">
+                        <!-- Personal Info -->
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="title">Professional Title</label>
+                                <input type="text" id="title" placeholder="Full Stack Developer" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                        </fieldset>
+
+                        <!-- Project/Experience Info -->
+                        <fieldset>
+                            <legend>Project or Experience</legend>
+                            <div class="form-group">
+                                <label for="projectTitle">Project/Experience Title</label>
+                                <input type="text" id="projectTitle" placeholder="E-Commerce Platform" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Description</label>
+                                <textarea id="description" placeholder="Brief description of your project or experience..." rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="technologies">Technologies Used</label>
+                                <input type="text" id="technologies" placeholder="React, Node.js, MongoDB (comma-separated)" required>
+                            </div>
+                        </fieldset>
+
+                        <!-- Links & Proof -->
+                        <fieldset>
+                            <legend>Links & Proofs</legend>
+                            <div class="form-group">
+                                <label for="liveLink">Live Link</label>
+                                <input type="url" id="liveLink" placeholder="https://example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="githubLink">GitHub Repository</label>
+                                <input type="url" id="githubLink" placeholder="https://github.com/username/repo">
+                            </div>
+                            <div class="form-group">
+                                <label for="imageUrl">Project Image URL</label>
+                                <input type="url" id="imageUrl" placeholder="https://example.com/image.jpg" required>
+                            </div>
+                        </fieldset>
+
+                        <!-- Additional Info -->
+                        <fieldset>
+                            <legend>Additional Details</legend>
+                            <div class="form-group">
+                                <label for="duration">Duration/Timeline</label>
+                                <input type="text" id="duration" placeholder="Jan 2024 - Present" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="highlights">Key Highlights</label>
+                                <textarea id="highlights" placeholder="• Achievement 1&#10;• Achievement 2&#10;• Achievement 3" rows="3"></textarea>
+                            </div>
+                        </fieldset>
+
+                        <button type="submit" class="btn-submit">Add to Portfolio</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Cards Display Section -->
+            <section class="cards-section">
+                <h2>Portfolio Items</h2>
+                <div id="cardsContainer" class="cards-container">
+                    <!-- Cards will be dynamically inserted here -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
